@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Saúl Hervás Gallego - Portfolio</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Saúl Hervás Gallego</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            
+                        </ul>
+                    </nav>
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <!--<p class="bienvenida">Bienvenidos  👋 </p>-->
+                <h2 class="typed"></h2>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/FotoCarnet.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola 👋, soy <span>Saúl Hervás Gallego</span> </h2>
+            <h3>Full-Stack Developer</h3>
+            <p>Tras 15 años dedicados al sector de la hostelería,en 2021 tome la determinación de dar un cambio de rumbo a mi vida y dedicarme a 
+                esta profesión tan apasionante. Gracias a mi experiencia en otro sector tengo grandes capacidades de liderazgo, una gran capacidad de trabajar en equipo
+                y mi habilidad para adaptarme rápidamente a nuevos desafíos.</p>
+            <p>Me considero una persona autodidacta dado que me gusta estar en constante aprendizaje día a día, tanto como de nuevas tecnologías, 
+                como de nuevos métodos de desarrollo que me ayuden a pulir y elevar mi nivel de aprendizaje.</p>
+            <a href="Currículum.pdf">Descargar CV</a>
+        </div>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/saul-hervas-gallego-998b49223/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a href="https://github.com/saulhervas"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i><span>saulhervasgallego@gmail.com</span></a>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <section id="habilidades">
+        <h3 class="titulo-seccion">HABILIDADES</h3>
+        <div class="imagenes">
+            <img src="./img/html.svg" alt="html"/>
+            <img src="./img/css.svg" alt="css" />
+            <img src="./img/bootstrap.svg" alt="bootstrap" />
+            <img src="./img/javascript.svg" alt="javascript" />
+            <img src="./img/typescript.svg" alt="typescript" />
+            <img src="./img/git.svg" alt="git/github" />
+            <img src="./img/java.svg" alt="java" />
+            <img src="./img/php.svg" alt="php" />
+            <img src="./img/mysql.svg" alt="mysql" />
+            <img src="./img/oracle.svg" alt="oracle" />
+            <img src="./img/angular.svg" alt="angular" />
+            <img src="./img/springio.svg" alt="spring" />
+        </div>
+    </section>
+
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Screenshot_1.jpg" alt="">
+                <div class="info">
+                    <h4>Proyecto TFG</h4>
+                    <p>Diseño Web Hotel</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/coming-soon.jpg" alt="">
+                <div class="info">
+                    <!--<h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>-->
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/coming-soon.jpg" alt="">
+                <div class="info">
+                   <!-- <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O 
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>-->
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Gracias por visitar mi página</p>
+        <p>Página creada por Saúl Hervás Gallego</p>
+        <p>© 2023. All Rights Reserved.</p>
+            <a href="https://www.linkedin.com/in/saul-hervas-gallego-998b49223/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/saulhervas"><i class="fa-brands fa-github"></i></a>
+    </footer>
+    <script src="https://kit.fontawesome.com/ae599ba121.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
