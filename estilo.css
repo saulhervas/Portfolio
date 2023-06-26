@@ -133,7 +133,6 @@
             color: #fff;
             display: none;
         }
-
         /* *********************/
         /* seccion S O B R E  M I */
         /* *********************/
@@ -438,12 +437,12 @@
         /* seccion R E S P O N S I V E */
         /* *********************/
         
-        @media screen and (max-width: 800px) {
+        @media (max-width: 978px) {
             .redes {
                 display: none;
             }
             nav {
-                display: none;
+                font-size: 12px;
             }
             nav.responsive {
                 display: block;
@@ -469,11 +468,11 @@
             }
             /* seccion SOBRE MI */
             #sobremi {
-                padding: 50px 0;
+                padding: 5px ;
                 display: block;
             }
             #sobremi .contenedor-foto {
-                max-width: 200px;
+                max-width: 150px;
                 margin: auto;
             }
             #sobremi .contenedor-foto img {
@@ -510,16 +509,31 @@
             #portfolio .fila .proyecto {
                 margin: 10px auto;
             }
-            /* seccion CONTACTO */
-            #contacto {
-                padding: 50px 15px;
+
+        @media (max-width: 600px ) {
+            .contenido-header h1{
+                display: none;
             }
-            #contacto .contenedor-form .mitad {
-                margin-bottom: 15px;
-                display: block;
-            }
-            #contacto .contenedor-form .mitad input {
-                width: 100%;
-                margin-bottom: 15px;
+            nav {
+                font-size: 10px;
             }
         }
+        @media (max-width: 450px ) {
+            #inicio .contenido .contenido-header{
+                max-width: 400px;
+            }
+            .contenido-header h1{
+                display: none;
+            }
+            nav {
+                font-size: 8px;
+            }
+            .contenedor-foto{
+                display: none;
+            }
+            #sobremi{
+                margin: 10px;
+            }
+        }
+
+    }
