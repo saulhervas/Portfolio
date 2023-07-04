@@ -436,7 +436,22 @@
         /* *********************/
         /* seccion R E S P O N S I V E */
         /* *********************/
-        
+        @media (min-width: 1200px) {
+            header{
+                font-size: 20px;
+            }
+            #inicio{
+                height: 800px;
+            }
+            #sobremi{
+                display: flex;
+                margin-left: 400px;
+                font-size: 20px;
+            }
+            #sobremi .sobremi p{
+                font-size: 20px;
+            }
+        }
         @media (max-width: 978px) {
             .redes {
                 display: none;
